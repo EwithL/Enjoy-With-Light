@@ -3,20 +3,74 @@
   <head>
     <meta charset="utf-8">
     <title>Enjoy With Light</title>
+
+    <style type="text/css">
+    .content div:hover{
+      background-color: #cccccc;
+      font-weight: bold;
+    }
+    </style>
+
   </head>
+  <style>
+    body {
+      margin: 0;
+      font-style: Sans-Serif;
+    }
+    .title{
+      font-size: 200%;
+      text-align: center;
+      padding: 5px;
+    }
+    .content {
+      border: 3px solid black;
+      font-size: 150%;
+      padding: 1px;
+      margin-left: 70px;
+      margin-right: 70px;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .younggle{
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
+  </style>
   <body>
-    <h1><a href="main.html">Enjoy With Light</a></h1>
+    <div>
+      <div class="title">
+        <h1><a href="main.html">Enjoy With Light</a></h1>
+      </div>
 
-    <ol>
-      <li><a href="info.html">info</a></li>
-      <li><a href="park.html">Park</a></li>
-      <li><a href="younggle.html">YoungGle</a></li>
-      <li><a href="subeen.html">SuBeen</a></li>
-      <li><a href="korsubeen.html">수빈</a></li>
-    </ol>
+      <div class="content">
+        <div style="cursor:pointer" onclick="window.location.href='info.html'">
+          info
+        </div>
+        <div style="cursor:pointer" onclick="window.location.href='park.html'">
+          Park
+        </div>
+        <div style="cursor:pointer" onclick="window.location.href='younggle.html'" class="younggle">
+          YoungGle
+        </div>
+        <div style="cursor:pointer" onclick="window.location.href='subeen.html'">
+          SuBeen
+        </div>
+        <div style="cursor:pointer" onclick="window.location.href='korsubeen.html'">
+          수빈
+        </div>
+        <div style="cursor:pointer" onclick="window.location.href='test.html'">
+          test
+        </div>
+        <div style="cursor:pointer" onclick="window.location.href='pic.html'">
+          pic
+        </div>
+      </div>
 
-    <img width="100%" src="">
-
+    </div>
   </body>
 </html>
