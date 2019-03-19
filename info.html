@@ -16,11 +16,13 @@
     body {
       margin: 0;
       font-style: Sans-Serif;
+      height: 800px;
     }
     .title{
-      font-size: 200%;
+      font-weight: bold;
+      font-size: 400%;
       text-align: center;
-      padding: 5px;
+      padding: 30px;
     }
     .content {
       border: 3px solid black;
@@ -32,20 +34,121 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+    .infocontent{
+      border: 3px solid black;
+      font-size: 150%;
+      padding: 1px;
+      margin-top: 10px;
+      margin-left: 70px;
+      margin-right: 70px;
+      height: 550px;
+    }
+    .history{
+      border: 1px solid #999999;
+      background-color: #999999;
+      color: #f7f7f7;
+      margin: 10px;
+      padding: 20px;
+      height: 490px;
+    }
+    .historypic{
+      border: 1px solid #f7f7f7f7;
+      width: 650px;
+      height: 490px;
+    }
     .info{
       font-weight: bold;
     }
-
+    .snslink{
+      margin-left: -20px;
+    }
+    .photobox{
+      margin-top: 20px;
+      margin-left: 70px;
+      margin-right: 70px;
+      width: 1300px;
+    }
+    .line1{
+      display: inline-block;
+      width: 305px;
+      height: 203px;
+      border: 3px solid black;
+    }
+    .line2{
+      display: inline-block;
+      width: 305px;
+      height: 203px;
+      margin-top: 20px;
+      border: 3px solid black;
+    }
+    .line3{
+      display: inline-block;
+      width: 305px;
+      height: 203px;
+      margin-top: 20px;
+      border: 3px solid black;
+    }
+    .line4{
+      display: inline-block;
+      width: 305px;
+      height: 203px;
+      margin-top: 20px;
+      border: 3px solid black;
+    }
+    .end{
+      border: 1px solid black;
+      margin-top: 20px;
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+    .endcontent{
+      margin-top: 10px;
+      margin-left: 70px;
+      margin-right: 70px;
+      height: 50px;
+    }
+    .sign{
+      display: grid;
+      margin-top: 12px;
+      font-size: 90%;
+      text-align: center;
+      grid-template-columns: 80px 80px;
+    }
+    .signin{
+      margin-top: 1px;
+    }
+    .signup{
+      border: 1px solid black;
+      background-color: #999999;
+      color: #f7f7f7;
+      font-weight: bold;
+    }
+    .namecontent{
+      font-weight: normal;
+      margin-top: 10px;
+    }
     a {
       text-decoration: none;
       color: black;
     }
-
+    p {
+      margin: 3px;
+      color: black;
+    }
   </style>
   <body>
     <div>
+      <div class = "sign" style="position:absolute; right: 70px; top:">
+        <div class ="signin" style="cursor:pointer" onclick="">
+          SignIn
+        </div>
+        <div class ="signup" style="cursor:pointer" onclick="">
+          SignUp
+        </div>
+      </div>
+
       <div class="title">
-        <h1><a href="main.html">Enjoy With Light</a></h1>
+        <a href="main.html" tabindex="-1">Enjoy With Light</a>
       </div>
 
       <div class="content">
@@ -69,6 +172,18 @@
         </div>
         <div style="cursor:pointer" onclick="window.location.href='pic.html'">
           pic
+        </div>
+      </div>
+
+      <div>
+        <div class="infocontent">
+          <div class="history">
+            <div class="historypic" style="position:absolute; right: 105px; top:">
+              photo
+            </div>
+            ajlskflaksjflkjasflkj
+
+          </div>
         </div>
       </div>
 
